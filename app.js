@@ -17,7 +17,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
 app.use('/user', userRoutes(router));
 
-mongoose.connect("mongodb://localhost:27017/klotz");
+mongoose.connect("mongodb://yashvardhan:yashvardhan@ds159776.mlab.com:59776/klotz");
 mongoose.connection.on('error', function(){
     console.log("Error while connecting to the database");
 });
